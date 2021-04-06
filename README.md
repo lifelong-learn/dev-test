@@ -1,6 +1,6 @@
 # Ambit - Coding Challenge
 
-Thanks for applying at Ambit. This coding challenge is an opportunity for you to show us your skills and your capable of.
+Thanks for applying at Ambit. This coding challenge is an opportunity for you to show us your skills and what you're capable of.
 
 The exercise is to:
 
