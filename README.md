@@ -10,7 +10,7 @@ To run either frontend or backend, go to the respective folders and run:
 
 The frontend is accesible via [http://localhost:3000](http://localhost:3000).
 
-The backend port has been reassigned to port 4000. Hence, it is accesible via [http://localhost:3000](http://localhost:3000).
+The backend port has been reassigned to port 4000. Hence, it is accesible via [http://localhost:4000](http://localhost:4000).
 
 ## Improvements
 
