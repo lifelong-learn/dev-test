@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { connect } from 'react-redux';
+import React, { Component } from 'react';
+import { getUserList } from './actions';
+import UserForm from './UserForm';
+import UserList from './UserList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class UnconnectedApp extends Component {
+  componentDidMount() {
+    this.props.getUserList();
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <div className="container">
+            <h1 className="mb-3">Test App</h1>
+            <UserForm />
+            <UserList display={this.props.display} />
+          </div>
+        </header>
+      </div>
+    );
+  }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  const { display } = state;
+  return { display };
+};
+
+export default connect(mapStateToProps, { getUserList })(UnconnectedApp);
