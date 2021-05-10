@@ -12,7 +12,7 @@ The frontend is accesible via [http://localhost:3000](http://localhost:3000).
 
 The backend port has been reassigned to port 4000. Hence, it is accesible via [http://localhost:4000](http://localhost:4000).
 
-To run test on frontend or backend, go to the frontend folder and run:
+To run test on frontend, go to the frontend folder and run:
 
 ### `npm test`
 
