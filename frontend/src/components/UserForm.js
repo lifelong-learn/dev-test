@@ -6,7 +6,7 @@ import {
   filterAgeUnderThirty,
   filterGenderMale,
   filterGenderFemale
-} from './actions';
+} from '../actions';
 
 class UnconnectedForm extends Component {
   constructor(props) {
