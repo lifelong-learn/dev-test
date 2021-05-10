@@ -2,8 +2,8 @@ import './App.css';
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import { getUserList } from './actions';
-import UserForm from './UserForm';
-import UserList from './UserList';
+import UserForm from './components/UserForm';
+import UserList from './components/UserList';
 
 export class UnconnectedApp extends Component {
   componentDidMount() {
